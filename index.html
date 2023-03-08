@@ -1,0 +1,28 @@
+<html>
+<input type="button" onclick="location.href='./snap.html';" value="SNAP plots" />
+<input type="button" onclick="location.href='./array.html';" value="LWA array plots" />
+<br>
+<br>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+</head>
+<body>
+Antenna # (001 - 365) : 
+<input type="text" id="imageName"> 
+<input type="button" id="view" value="View"/>
+<div id="imageDiv">
+
+</div>
+
+<script>
+$("#view").on("click", function()
+{
+var image=$("#imageName").val();
+    $("#imageDiv").html("<img src='"+image+".jpg'></img>");
+});
+</script>
+</body>
+</html>
